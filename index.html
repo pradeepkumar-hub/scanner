@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyberpunk Live Scanner</title>
+  <link rel="stylesheet" href="cyber.css" />
+</head>
+<body>
+
+<div id="wrapper">
+  <h1 class="title">CYBERPUNK<br><span>LIVE SCAN</span></h1>
+  <p class="privacy">Privacy: All processing happens locally. Nothing is uploaded.</p>
+
+  <div id="container">
+
+    <!-- Live Camera Box -->
+    <div id="camera-box">
+      <video id="video" autoplay playsinline></video>
+      <div class="scan-lines"></div>
+      <button id="capture-btn">SCAN</button>
+    </div>
+
+    <!-- Result Box -->
+    <div id="result-box">
+      <canvas id="canvas"></canvas>
+      <div id="blurb" class="hidden"></div>
+      <button id="retry-btn" class="hidden">TRY AGAIN</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="pk.js"></script>
+</body>
+</html>
